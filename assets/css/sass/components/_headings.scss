@@ -1,0 +1,38 @@
+/*====================== start heading ======================================*/
+.head-with-border {
+  position: relative;
+  display: flex;
+  h2 {
+    margin: 40px 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    color: #000;
+
+    transition: 0.5s;
+
+    &:before {
+      content: "";
+      position: absolute;
+      // top: 7%;
+      background-color: #d2ba8a;
+      width: 65px;
+      height: 65px;
+      z-index: -1;
+      border-radius: 50px;
+      transition: 0.5s;
+    }
+
+    &:hover {
+      transform: translate(-10px, -10px);
+      &:before {
+        width: 20px;
+        height: 20px;
+        bottom: 0;
+        top: auto;
+      }
+    }
+  }
+}
+
+/*====================== end heading ======================================*/

@@ -1,0 +1,71 @@
+// ========= start about us ==============
+.about_us {
+  position: relative;
+  margin: 100px 0 100px;
+
+  .image {
+    position: relative;
+    transition: 0.5s;
+    max-width: 90%;
+    margin: auto;
+
+    & > img {
+      max-height: 480px;
+      width: 100%;
+      height: 100%;
+      transition: 0.5s;
+    }
+
+    .img_border {
+      position: absolute;
+      top: 50px;
+      right: -37px;
+      z-index: -1;
+      transition: 0.5s;
+      max-height: 400px;
+      margin: auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &:hover {
+      .img_border {
+        top: 30px;
+        right: -20px;
+      }
+
+      // > img {
+      //   transform: scale(1.1);
+      // }
+    }
+  }
+
+  .content {
+    .head-with-border {
+      justify-content: flex-start;
+    }
+
+    span {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      color: #3f3f3f;
+    }
+    p {
+      padding-top: 24px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: #3f3f3f;
+    }
+  }
+
+  .back_img {
+    position: absolute;
+    left: 20px;
+    bottom: -108px;
+  }
+}
